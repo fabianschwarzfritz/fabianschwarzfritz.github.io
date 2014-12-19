@@ -13,7 +13,7 @@ body {
 
 #home {
     text-align: center;
-    background: url(bg3.jpg) no-repeat center center fixed; 
+    background: url(bg3.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -42,7 +42,7 @@ body {
 
 #about {
     background-color: #E2DA99;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 #projects {
