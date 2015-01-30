@@ -251,6 +251,10 @@ section.success {
     }
 }
 
+#travel {
+    background-color: #DDD315;
+}
+
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
