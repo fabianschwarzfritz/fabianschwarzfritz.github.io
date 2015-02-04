@@ -1,0 +1,6 @@
+@font-face {
+	font-family: "Yanone Kaffeesatz";
+	font-style: normal;
+	font-weight: 200;
+	src: local("Yanone Kaffeesatz ExtraLight"), local("YanoneKaffeesatz-ExtraLight"), url(yanone.woff) format("woff");
+	}

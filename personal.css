@@ -1,0 +1,165 @@
+/*	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+
+/*	BODY MIT HINTERGRUND-FOTO */
+	
+body {
+	background-color: #111;
+	background-image: url("bg.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	line-height: 1;
+	font-size: 62.5%; /* BASIS-GRÖSSE (62,5% = 10PX) */
+	}
+
+a {
+	color: #FFF;
+	text-decoration: none;
+	}
+	
+/*	ÜBERSCHRIFTEN: NAME / KURZBESCHR. */
+	
+h1, h2 {
+	color: #FFF;
+	font-family: "Yanone Kaffeesatz", "Arial Narrow", Sans-Serif;
+	font-weight: 200;
+	padding: 0 5%;
+	text-shadow: 1px 1px 0 #333;
+	}
+	
+h1 {
+	font-size: 700%; /* IN BEZUG AUF BASIS-GRÖSSE (700% = 70PX) */
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	margin: 5% 0 10px 0;
+	word-wrap: break-word;
+	}
+
+h2 {
+	font-size: 360%;
+	letter-spacing: 1px;
+	}
+	
+/*	BIOGRAFIE-BOX */
+	
+#biografie {
+	position: relative;
+	width: 50%;
+	max-width: 600px;
+	color: #FFF;
+	font-family: Georgia, Cambria, "Times New Roman", Serif;
+	font-size: 220%;
+	line-height: 1.5em;
+	text-shadow: 1px 1px 0 #333;
+	margin: 60px 5% 0 5%;
+	z-index: 1;
+	}
+	
+#biografie p {
+	margin: 10px 0;
+	}
+	
+#biografie a {
+	color: #ECCFAE;
+	transition: color .2s ease;
+	-webkit-transition: color .2s ease;
+	-moz-transition: color .2s ease;
+	-o-transition: color .2s ease;
+	}
+	
+#biografie a:hover {
+	color: #FFF;
+	}
+	
+/*	SOCIAL-WEB-LINKS */
+	
+#links {
+	margin: 60px 5% 5% 5%;
+	}
+	
+#links img {
+	width: 45px;
+	height: auto;	
+	}
+
+#links a {
+	margin: 0 8px 0 0;
+	}
+	
+#links a:hover {
+	opacity: .6;
+	transition: opacity .3s ease;
+	-webkit-transition: opacity .3s ease;
+	-moz-transition: opacity .3s ease;
+	-ms-transition: opacity .3s ease;
+	-o-transition: opacity .3s ease;
+	}
+	
+/*	EINSTEIN-UNTERSCHRIFT */
+	
+#logo {
+	width: 95%;
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	text-align: right;
+	z-index: 0;
+	}
+		
+#logo img {
+	width: 100%;
+	max-width: 300px;
+	height: auto;
+	}
+	
+/*	OPTIMIERUNG FÜR KLEINE BILDSCHIRME, AM 
+	BEISPIEL DES IPHONE: */
+	
+@media only screen 
+	and (min-width : 320px) 
+	and (max-width : 568px) {
+
+	#logo {
+		position: relative;
+		bottom: auto;
+		right: auto;
+		text-align: left;
+		margin: 30px 5% 5% 5%;
+		}
+
+	}
+	
+/*	DAS LOGO (EINSTEINS UNTERSCHRIFT) WIRD 
+	NICHT FIXIERT, SONDERN ANS ENDE DER 
+	SEITE GESTELLT. ALTERNATIV KÖNNTE MAN 
+	ES MIT DIPLAY:NONE AUCH AUSBLENDEN. */
