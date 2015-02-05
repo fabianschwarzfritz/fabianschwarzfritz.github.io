@@ -6,13 +6,13 @@
 	Eleganter Einseiter als persönliche Homepage
 	c't 18/13, Seite 174
 
-	Einstein-Foto:	Ferdinand Schmutzer (Public Domain)
-					http://commons.wikimedia.org/wiki/File:Einstein_1921_by_F_Schmutzer.jpg
+	Einstein-Foto:	Usplash
+					Thanks alot for all those great pictures
+					https://unsplash.com/
+
 	Yanone-Font:	Jan Gerne (SIL Open Font License)
 					http://www.yanone.de/typedesign/kaffeesatz/
 					http://www.google.com/fonts/specimen/Yanone+Kaffeesatz
-	Icons:			Jelio Dimitrov
-					http://dribbble.com/shots/384760-Free-Social-Icons
 -->
 
 <head>
@@ -21,27 +21,40 @@
 	<title>Fabian Schwarz-Fritz</title>
 	<link href="yanone.css" rel="stylesheet" type="text/css" />
 	<link href="personal.css" rel="stylesheet" type="text/css" />
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+	<script type="text/javascript">
+		var totalCount = 73;
+		function changeBackground() {
+			var num = Math.ceil(Math.random() * totalCount);
+			document.body.background = 'images/unsplash/' + num + '.jpg';
+			// document.body.style.backgroundRepeat = "repeat";
+		}
+	</script>
 </head>
 
-<body>
+<body onkeydown="changeBackground()">
 	<h1>Fabian Schwarz-Fritz</h1>
-	<h2>Genie. &nbsp; Physiker. &nbsp; E = mc<sup>2</sup>.</h2>
+	<h2>Master student. Traveller. Developer.</h2>
 
 	<div id="biografie">
-		<p>Ich bin theoretischer Physiker. Meine Forschungen zur Struktur von Materie, Raum und Zeit sowie dem <a href="http://de.wikipedia.org/wiki/Albert_Einstein">Wesen der Gravitation</a> veränderten ma&szlig;geblich das physikalische Weltbild.</p>
-		<p>Meine Bekanntheit nutze ich auch au&szlig;erhalb der naturwissenschaftlichen Fachwelt, beispielsweise bei meinem Einsatz für V&ouml;lkerverst&auml;ndigung und Frieden.</p>
+		<p>I am a master student of Comptuer Science. My passion goes for software development in my professional and travelling in my private life. Currently I am in <a href="#">San Francisco</a> and work on <a href="review.ninja">ReviewNinja</a>.</p>
+		<p>Thanks to <a href="http://christophhaefner.de">Christoph Haefner</a>, who motivated me to this small personal space in the web. If you want to read something cool I can recommend <a href="#">good blogs</a>.</p>
+		<p>Press any key to <a href="#" onclick="changeBackground()">apply magic</a>.</p>
 	</div>
 
-	<div id="links">
-		<a href="#"><img src="twitter.png" alt="Twitter" /></a>
-		<a href="#"><img src="facebook.png" alt="Facebook" /></a>
-		<a href="#"><img src="youtube.png" alt="YouTube" /></a>
-		<a href="#"><img src="rss.png" alt="RSS-Feed" /></a>
-	</div>
+	<!-- <span id="links">
+		<a href="#"><i class="fa fa-5x fa-code-fork"></i></a>
+		<a href="#"><i class="fa fa-5x fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-5x fa-envelope"></i></a>
+	</span> -->
 
 	<div id="logo">
 		<img src="logo.png" alt="Einstein" />
 	</div>
+
+	<script type="text/javascript">
+		changeBackground();
+	</script>
 </body>
 
 </html>
