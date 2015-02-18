@@ -171,3 +171,8 @@ h2 {
 	NICHT FIXIERT, SONDERN ANS ENDE DER
 	SEITE GESTELLT. ALTERNATIV KÖNNTE MAN
 	ES MIT DIPLAY:NONE AUCH AUSBLENDEN. */
+
+.content {
+	background-color: white;
+	height: 70vh;
+}
