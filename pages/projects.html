@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="projects.css">
     <title>Projects</title>
-  </head>
-  <body>
-    hello
-  </body>
+</head>
+<body>
+
+    <!-- the navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Fabian Schwarz-Fritz</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/home" target="_self">Home</a></li>
+                    <li><a href="/technology" target="_self">technology</a></li>
+                    <li><a href="/work" target="_self">work</a></li>
+                    <li><a href="/thoughts" target="_self">thoughts</a></li>
+                    <li><a href="/experience" target="_self">experience</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <section ui-view>asdf</section>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/js/image.js"/>
+
+    <script type="text/javascript" src="../jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+
+</body>
 </html>
