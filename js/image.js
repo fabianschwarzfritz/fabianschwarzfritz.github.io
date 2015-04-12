@@ -11,7 +11,7 @@ var BackgroundChanger = function(spec) {
 		var num = Math.ceil(Math.random() * spec.count);
 		document.body.background = spec.directory + num + '.' + spec.type;
 		console.log('changeBackgrund', document.body.background);
-		// document.body.style.backgroundRepeat = "repeat";
+		document.body.style.backgroundRepeat = "repeat";
 	}
 
 	return Object.freeze({
