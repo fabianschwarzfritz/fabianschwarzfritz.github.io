@@ -1,3 +1,4 @@
-body {
-    /*background: url('../images/unsplash/9.jpg');*/
+.maincontainer {
+	background: #f8f8f8;
+	border-radius: 15px;
 }
