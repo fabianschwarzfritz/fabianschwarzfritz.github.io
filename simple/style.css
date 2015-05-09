@@ -2,21 +2,58 @@ body {
 	background-color: #ece5df;
 }
 
+.row {
+	margin: 0;
+	padding; 0;
+}
+
 .border-top {
 	border-top: 4px solid #0a161f;
 }
 
-nav ul {
+.title {
+	margin-top: 6em;
+}
+
+.title header h1 {
+	color: black;
+}
+
+.title header h2 {
+	font-size: large;
+	color: #304251;
+}
+
+.menu  {
+	margin-top: 4em;
+}
+
+.menu nav ul {
 	padding: 0;
 }
 
-nav ul.inline-list-custom {
+.menu nav ul.inline-list-custom {
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
 	text-align: center;
 	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+	text-transform: uppercase;
 }
 
-nav ul.inline-list-custom li {
+.menu nav ul.inline-list-custom li {
 	display: inline-block;
 	padding-left: 1em;
 	padding-right: 1em;
+}
+
+.main {
+	margin-top: 3em;
+}
+
+.main img {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
 }
