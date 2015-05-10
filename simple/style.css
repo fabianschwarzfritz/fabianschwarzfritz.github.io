@@ -95,11 +95,17 @@ p {
 }
 
 .projects .projectbox {
-	text-align: center;
 }
 
 .projects h1 {
+	text-align: center;
 	font-size: medium;
+}
+
+.projects .projectbox h2 {
+	text-align: center;
+	font-size: small;
+	font-style: italic;
 }
 
 .footer {
