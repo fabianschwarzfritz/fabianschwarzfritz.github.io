@@ -94,6 +94,14 @@ p {
 	height: auto;
 }
 
+.projects .projectbox {
+	text-align: center;
+}
+
+.projects h1 {
+	font-size: medium;
+}
+
 .footer {
 	margin-top: 2em;
 	padding-top: 1em;
