@@ -78,8 +78,12 @@ p {
 	transition: color 0.2s ease-out;
 }
 
+.menu nav ul.inline-list-custom li a .current {
+	color: #0a161f;
+}
+
 .menu nav ul.inline-list-custom li a:hover {
-	color: black;
+	color: #0a161f;
 	text-decoration: none;
 }
 
