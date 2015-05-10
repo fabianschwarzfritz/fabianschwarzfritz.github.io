@@ -46,6 +46,10 @@ p {
 	margin-top: 4em;
 }
 
+.menu nav {
+	padding: 0;
+}
+
 .menu nav ul {
 	padding: 0;
 }
