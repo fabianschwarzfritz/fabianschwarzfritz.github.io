@@ -1,14 +1,11 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Fabian's digital home
+email: fabian@schwarz-fritz.de
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome to my digital home. This is my blog and website and space other things. What people called a personal website back in the days. It's mainly about software development, projects, me, or sometimes maybe a bit philosophical. I don't only writing because I find the content interesting, or to have "my own cool blog that no one will read", but mostly to improve my writing style. 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://fabianschwarzfritz.github.io" # the base hostname & protocol for your site
+github_username:  fabianschwarzfritz
 
 # Build settings
 markdown: kramdown
