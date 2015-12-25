@@ -2,8 +2,11 @@ body {
     background-image: url("http://kitestudioarchitecture.com/images/tile.gif");
     background-repeat: repeat;
     font-family: Georgia, Helvetica, sans-serif
-    padding: 0;
-    margin: 0 auto;
+}
+
+html, body{
+  margin:0 !important;
+  padding:0 !important;
 }
 
 @font-face {
@@ -12,6 +15,7 @@ body {
 }
 
 nav {
+    font-size: 14px;
     position: fixed;
     padding-top: 1em;
     padding-left: 1em;
@@ -25,13 +29,14 @@ nav > ul {
 }
 
 nav > ul > li {
-    margin-bottom: 0.2em;
+    margin-bottom:0.5em;
 }
 
 
 nav > ul > li > a {
     font-size: 1.5em;
     text-decoration: none;
+    padding: 0.1em;
 }
 
 nav > ul > li.green > a {
@@ -60,4 +65,36 @@ nav > ul > li.blue > a {
 nav > ul > li.blue:hover > a {
     color: #ffffff;
     background-color: #67CCCD;
+}
+
+main {
+    position: relative;
+    margin: 0 auto;
+    width: 30%;
+}
+
+main > section {
+    background-color: white;
+    padding: 1em;
+}
+
+main > section > header > h1 {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-size: 3em;
+    display: inline;
+    padding: 0.1em;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: #CFCCC8;
+    background-color: #CFCCC8;
+}
+
+main > section > article {
+    color: red;
 }
