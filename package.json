@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "jade . && npm run scss",
     "start": "jade . && npm run scss && open index.html",
     "scss": "node-sass scss/ -o css/"
   },
