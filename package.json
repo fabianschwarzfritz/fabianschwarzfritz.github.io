@@ -1,0 +1,24 @@
+{
+  "name": "fabianschwarzfritz.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "jade . && npm run scss",
+    "start": "jade . && npm run scss && open index.html",
+    "scss": "node-sass scss/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabianschwarzfritz/fabianschwarzfritz.github.io.git"
+  },
+  "author": "Fabian Schwarz-Fritz <fabian@schwarz-fritz.de> (https://fabianschwarzfritz.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabianschwarzfritz/fabianschwarzfritz.github.io/issues"
+  },
+  "homepage": "https://github.com/fabianschwarzfritz/fabianschwarzfritz.github.io#readme",
+  "dependencies": {
+    "jade": "1.11.0"
+  }
+}
