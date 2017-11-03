@@ -47,6 +47,16 @@ body {
   grid-row-end: 2;
 }
 
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  text-align: center;
+}
+
 .image-circle {
   border-radius: 50%;
 }
