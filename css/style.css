@@ -4,11 +4,8 @@ body {
   margin: 0 auto; }
 
 .container {
-  display: grid; }
-
-.grid {
   font-family: 'Vollkorn', serif;
-  padding: 25px; }
+  display: grid; }
 
 .header {
   grid-column-start: 1;
@@ -24,17 +21,22 @@ body {
 
 .subheading {
   font-size: 1.8rem;
-  margin: 0.7rem; }
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem; }
 
 .introtext {
   font-size: 1.0rem;
-  margin: 1.5rem; }
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
 
 .content {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
-  grid-row-end: 2; }
+  grid-row-end: 2;
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em; }
 
 .footer {
   grid-column-start: 1;
