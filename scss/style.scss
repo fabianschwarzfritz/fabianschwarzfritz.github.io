@@ -48,8 +48,10 @@ body {
   grid-gap: 1em;
 }
 
-.event {
+.event > h1 {
+  font-size: 1.5rem;
 }
+
 
 .footer {
   grid-column-start: 1;
