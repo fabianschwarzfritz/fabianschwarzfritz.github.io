@@ -5,7 +5,8 @@ body {
 
 .container {
   font-family: 'Vollkorn', serif;
-  display: grid; }
+  display: grid;
+  margin-top: 1rem; }
 
 .header {
   grid-column-start: 1;
