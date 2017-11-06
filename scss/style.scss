@@ -49,10 +49,14 @@ body {
   grid-gap: 1em;
 }
 
+#validator {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 .event > h1 {
   font-size: 1.5rem;
 }
-
 
 .footer {
   grid-column-start: 1;
