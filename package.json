@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/fabianschwarzfritz/fabianschwarzfritz.github.io#readme",
   "dependencies": {
-    "jade": "1.11.0"
+    "jade": "1.11.0",
+    "node-sass": "^4.9.3",
+    "npm-check-updates": "^2.14.2"
   }
 }
