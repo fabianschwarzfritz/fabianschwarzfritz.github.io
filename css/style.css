@@ -1,55 +1,61 @@
 @import url("https://fonts.googleapis.com/css?family=Vollkorn");
 body {
-  max-width: 980px;
-  margin: 0 auto; }
+	max-width: 980px;
+	margin: 0 auto;
+}
 
 .container {
-  font-family: 'Vollkorn', serif;
-  display: grid;
-  margin-top: 1rem; }
+	font-family: 'Vollkorn', serif;
+	display: grid;
+	margin-top: 1rem;
+}
 
 .header {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  text-align: center; }
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	text-align: center;
+}
 
 .heading {
-  font-size: 2.5rem;
-  margin: 0rem;
-  font-weight: bold; }
+	font-size: 2.5rem;
+	margin: 0rem;
+	font-weight: bold;
+}
 
 .subheading {
-  font-size: 1.8rem;
-  margin-top: 0.7rem;
-  margin-bottom: 0.7rem; }
+	font-size: 1.8rem;
+	margin-top: 0.7rem;
+	margin-bottom: 0.7rem;
+}
 
 .introtext {
-  font-size: 1.0rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem; }
+	font-size: 1.0rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
 
 .content {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  display: inline-grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1em; }
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 2;
+	display: inline-grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 1em;
+}
 
-.event > h1 {
-  font-size: 1.5rem; }
+.event>h1 {
+	font-size: 1.5rem;
+}
 
 .footer {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 3;
-  font-size: 0.8rem;
-  line-height: 1.2rem;
-  text-align: center; }
-
-.image-circle {
-  border-radius: 50%; }
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 3;
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+	text-align: center;
+}
