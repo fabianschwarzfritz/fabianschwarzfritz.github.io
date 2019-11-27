@@ -50,11 +50,27 @@ body {
 	font-size: 1.5rem;
 }
 
-.footer {
+.links {
 	grid-column-start: 1;
 	grid-column-end: 4;
 	grid-row-start: 3;
 	grid-row-end: 3;
+	text-align: center;
+}
+
+.link-icon {
+	color: grey;
+}
+
+.link-icon:hover {
+	color: black;
+}
+
+.footer {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 4;
+	grid-row-end: 4;
 	font-size: 0.8rem;
 	line-height: 1.2rem;
 	text-align: center;
