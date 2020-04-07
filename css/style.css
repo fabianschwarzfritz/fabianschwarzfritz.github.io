@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Vollkorn");
+
+:root {
+  --base: #ffffff;
+}
+
 body {
+  background: var(--base);
 	max-width: 980px;
 	margin: 0 auto;
 }
@@ -66,11 +72,20 @@ body {
 	color: black;
 }
 
-.footer {
+.fun {
 	grid-column-start: 1;
 	grid-column-end: 4;
 	grid-row-start: 4;
 	grid-row-end: 4;
+	text-align: center;
+	font-size: 0.6rem;
+}
+
+.footer {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 5;
+	grid-row-end: 5;
 	font-size: 0.8rem;
 	line-height: 1.2rem;
 	text-align: center;

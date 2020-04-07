@@ -65,9 +65,22 @@
             <a href="https://facebook.com/fabian.schwarzfritz/"><i class="material-icons link-icon">face</i></a>
             <a href="https://www.projectbaselinerheinauersee.de/"><i class="material-icons link-icon">waves</i></a>
         </div>
+        <div class="fun">
+            <p>Some fun website settings (work in progress):</p>
+            <p><input type="color" name="base" value="#ffffff"/></p>
+        </div>
         <div class="footer">
             <p>Copyright: Fabian Schwarz-Fritz.</p>
         </div>
     </div>
+
+    <script>
+        const inputs = document.querySelectorAll('.fun input');
+        function handleUpdate() {
+          console.log(this.value);
+          document.documentElement.style.setProperty(`--base`, this.value);
+        };
+        inputs.forEach(input => input.addEventListener('change', handleUpdate));
+    </script>
 </body>
 </html>
