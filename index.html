@@ -67,7 +67,25 @@
         </div>
         <div class="fun">
             <p>Some fun website settings (work in progress):</p>
-            <p><input type="color" name="base" value="#ffffff"/></p>
+            <p><input type="color" name="base-color" value="#ffffff"/></p>
+            <p><select name="font">
+                <option selected>Vollkorn</option>
+                <option>Arial</option>
+                <option>Roboto</option>
+                <option>Times New Roman</option>
+                <option>Times </option>
+                <option>Courier New</option>
+                <option>Courier</option>
+                <option>Verdana</option>
+                <option>Georgia</option>
+                <option>Palatino</option>
+                <option>Garamond</option>
+                <option>Bookman</option>
+                <option>Comic Sans MS</option>
+                <option>Candara</option>
+                <option>Arial Black</option>
+                <option>Impact</option>
+            </select></p>
         </div>
         <div class="footer">
             <p>Copyright: Fabian Schwarz-Fritz.</p>
@@ -75,12 +93,19 @@
     </div>
 
     <script>
-        const inputs = document.querySelectorAll('.fun input');
-        function handleUpdate() {
+        const colorInput = document.querySelectorAll('.fun input');
+        colorInput.forEach(input => input.addEventListener('change', handleColorSelection));
+        function handleColorSelection() {
           console.log(this.value);
-          document.documentElement.style.setProperty(`--base`, this.value);
+          document.documentElement.style.setProperty(`--base-color`, this.value);
         };
-        inputs.forEach(input => input.addEventListener('change', handleUpdate));
+
+        const fontSelect = document.querySelectorAll('.fun select');
+        fontSelect.forEach(select => select.addEventListener('change', handleFontSelection));
+        function handleFontSelection() {
+            console.log(this.value);
+            document.documentElement.style.setProperty(`--base-font`, this.value);
+        }
     </script>
 </body>
 </html>

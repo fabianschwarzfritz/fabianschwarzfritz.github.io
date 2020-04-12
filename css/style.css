@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Vollkorn");
 
 :root {
-  --base: #ffffff;
+	--base-color: #ffffff;
+	--base-font: 'Vollkorn';
 }
 
 body {
-  background: var(--base);
-	max-width: 980px;
+	font-family: var(--base-font);
+	background: #ffffff;  /*fallback*/
+    background: var(--base-color);
+    max-width: 980px;
 	margin: 0 auto;
 }
 
 .container {
-	font-family: 'Vollkorn', serif;
+	font-family: sans-serif; /*fallback*/
+	font-family: var(--base-font);
 	display: grid;
 	margin-top: 1rem;
 }
