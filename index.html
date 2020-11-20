@@ -77,9 +77,8 @@
             <p>Some fun website settings (work in progress):</p>
             <p><input type="color" name="base-color" value="#ffffff"/></p>
             <p><select name="font">
-                <option selected>Vollkorn</option>
+                <option selected>Roboto</option>
                 <option>Arial</option>
-                <option>Roboto</option>
                 <option>Times New Roman</option>
                 <option>Times </option>
                 <option>Courier New</option>
@@ -93,6 +92,7 @@
                 <option>Candara</option>
                 <option>Arial Black</option>
                 <option>Impact</option>
+                <option>Vollkorn</option>
             </select></p>
         </div>
         <div class="footer">
@@ -105,7 +105,7 @@
         colorInput.forEach(input => input.addEventListener('change', handleColorSelection));
         function handleColorSelection() {
           console.log(this.value);
-          document.documentElement.style.setProperty(`--base-color`, this.value);
+          document.documentElement.style.setProperty(`--base-background-color`, this.value);
         };
 
         const fontSelect = document.querySelectorAll('.fun select');
