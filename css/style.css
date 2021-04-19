@@ -86,12 +86,11 @@ a:hover {
 	grid-row-end: 3;
 }
 
-.private {
+.personal {
 	grid-column-start: 1;
 	grid-column-end: 4;
 	grid-row-start: 4;
 	grid-row-end: 4;
-	text-align: center;
 }
 
 .links {
