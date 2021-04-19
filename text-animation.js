@@ -6,8 +6,12 @@
  */
 
 function outAnimation() {
-    // Pre defined texts
-    const texts = ['Designs', 'Develops', 'Define', 'Plans', 'Adopts'];
+    // The speed in which the letters are unfolding.
+    const letterspeed = 100;
+    // the speed in which new words appear randomly.
+    const wordspeed = 1800;
+    // Pre defined texts.
+    const texts = ['Designs', 'Develops', 'Defines', 'Plans', 'Adopts', 'Fixes'];
 
     // Generates a random index between 0 and *max*.
     function randomIndex(max) {
@@ -28,11 +32,11 @@ function outAnimation() {
         const word = selectedWord.slice(0, displayedLength)
         output.innerHTML = word;
 
-        setTimeout(innerAnimation, 100);
+        setTimeout(innerAnimation, letterspeed);
     }
 
     innerAnimation();
-    setTimeout(outAnimation, 1800);
+    setTimeout(outAnimation, wordspeed);
 }
 
 // Main call to start the animation
