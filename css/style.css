@@ -3,11 +3,11 @@
 
 :root {
 	/* Gruvbox color theme */
-	--base-title-color: #458588;
-	--base-heading-color: #fb4934;
-	--base-text-color: #282828;
-	--base-link-color: #689d6a;
-	--base-background-color: #fbf1c7;
+	--base-heading-color: #cc241d;
+	--base-title-color: #98971a;
+	--base-text-color: #ebdbb2;
+	--base-link-color: #83a598;
+	--base-background-color: #282828;
 	--base-font: 'Roboto', sans-serif;
 
 }
@@ -31,7 +31,7 @@ a {
 	color: var(--base-link-color);
 }
 a:hover {
-	filter: brightness(0.5);
+	filter: brightness(1.5);
 }
 
 .container {
@@ -98,7 +98,7 @@ a:hover {
 	color: var(--base-link-color)
 }
 .link-icon:hover {
-	filter: brightness(0.5);
+	filter: brightness(1.5);
 }
 
 .fun {
