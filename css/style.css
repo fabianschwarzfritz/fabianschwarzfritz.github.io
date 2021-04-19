@@ -86,11 +86,19 @@ a:hover {
 	grid-row-end: 3;
 }
 
-.links {
+.private {
 	grid-column-start: 1;
 	grid-column-end: 4;
 	grid-row-start: 4;
 	grid-row-end: 4;
+	text-align: center;
+}
+
+.links {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 5;
+	grid-row-end: 5;
 	text-align: center;
 }
 
@@ -104,8 +112,8 @@ a:hover {
 .fun {
 	grid-column-start: 1;
 	grid-column-end: 4;
-	grid-row-start: 5;
-	grid-row-end: 5;
+	grid-row-start: 6;
+	grid-row-end: 6;
 	text-align: center;
 	font-size: 0.6rem;
 }
@@ -113,8 +121,8 @@ a:hover {
 .footer {
 	grid-column-start: 1;
 	grid-column-end: 4;
-	grid-row-start: 6;
-	grid-row-end: 6;
+	grid-row-start: 7;
+	grid-row-end: 7;
 	font-size: 0.8rem;
 	line-height: 1.2rem;
 	text-align: center;
