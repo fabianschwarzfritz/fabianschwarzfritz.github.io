@@ -10,8 +10,10 @@
 <body>
   <style>
     body {
-      background-color: #f7f7f7;
-      color: #484848;
+      /*background-color: #f7f7f7; */
+      background-color: #202124;
+      /*color: #484848;*/
+      color: #bdc1c6;
       font-family: Helvetica;
       margin: 60px auto;
       width: 580px;
@@ -33,9 +35,13 @@
       margin-top: 50px;
     }
 
-	img {
-	  width: 100px;
-	}
+    img {
+      width: 100px;
+    }
+
+    a {
+      color: #8ab4f8;
+    }
 
 
     @media screen and (max-width:770px) {
@@ -56,42 +62,44 @@
   <a href="me.jpg">
     <img src="me.jpg" class="avatar" />
   </a>
-  <p>I've been developing services and applications for years, mostly for SAP. After working on the CloudFoundry
-    offering that enabled teams to developing cloud-native applications, I dedicated my work onto deploying
-    fully-managed Application Lifecycle Management on top of Kubernetes, I know spend my time as an application
-    developer to build SAP's Data Warehouse Cloud.</p>
+  <p>
+    I'm a software engineer and for over 10 years I have been developing applications, service and platforms.
+  </p>
+  <p>
+    My main interests are in distributed systems and backend development. And vim.
+    Once in a while I write some lines for mobile as well.
+  </p>
   <h2>Projects at Work</h2>
   <h3>Data Warehouse Cloud</h3>
-  <p><a href="https://www.sap.com/germany/products/data-warehouse-cloud.html">SAP Data Warehouse Cloud</a> is a
-    software-as-a-service Business Warehouse offering. It is an integrated, fully managed service, and persona-driven
-    Data Warehouse as a Service solution, suitable for SAP and non-SAP customers offering reduced deployment complexity,
-    flexible pricing with integration to SAP Intelligent Enterprise Suite solutions, SAP Analytics Cloud, SAP Cloud
-    Platform services, Partner solutions and open-source technologies.</p>
+  <p>
+    <a href="https://www.sap.com/germany/products/data-warehouse-cloud.html">SAP Data Warehouse Cloud</a> is a
+    software-as-a-service Business Warehouse offering.
+    I technically lead a team and we brought concept to production of the data warehouse task management system in 6 months.
+    The system is used by 200+ customers for production data warehousing and manages 86.000 data long-running data replication tasks per day. Over the three years the software has grown and now supports features like cloud-native resiliency and task chains.
+    I helped bringing technical concepts and enginneering approaches from the cloud-native to SAP's business warehouse world.
+  </p>
   <h3>Gardener</h3>
   <p><a href="https://gardener.cloud">Gardener</a> is an open source project driven by SAP to create, update and monitor
-    kubernetes clusters. Gardener can operate hundrets of clusters with operation, management and monitoring
-    capabilities. I've initiated a project, now called <a href="https://github.com/gardener/potter-hub">Potter</a>,
-    automating an fully managing installed software and services on top of those clusters. With that, stakeholders can't
-    only get fully managed clusters, by the software on top of it are install- and opererateable in an "off-the-shelf"
-    fashion.</p>
+    kubernetes clusters.
+    Gardener can operate hundrets of clusters with operation, management and monitoring capabilities.
+    I've initiated a project, now called <a href="https://github.com/gardener/potter-hub">Potter</a>, automating an fully managing installed software and services on top of those clusters.
+    Stakeholders can define their software bill-of-materials and the hub deploys and reconciles packages on the cluster.
+    Besides technical CRDs, a user friendly UI helps exploring available packages and monitoring what's running on the cluster.
+  </p>
   <h3>Peripli</h3>
   <p><a href="https://github.com/Peripli">Peripli</a>, or the Service Manager enables service consumption across
     different platforms. Platforms need to implement the <a href="https://www.openservicebrokerapi.org/">Open Service
       Broker Api</a> and can then consume a service running in a remote platform. In a team I was developing this
-    service brokner, enabling cross consumption between the different platform stacks, Neo, CloudFoundry and Kuberentes,
-    at SAP.</p>
+    service brokner, enabling cross consumption between the different platform stacks, Neo, CloudFoundry and Kuberentes.</p>
   <h3>ReviewNinja</h3>
-  <p>"ReviewNinja is a light-weight code-review tool which fits neatly into the GitHub pull request workflow. It
-    presents all the project information needed to commit a pull request and merge code confidently." [<a
+  <p>
+    "ReviewNinja is a light-weight code-review tool which fits neatly into the GitHub pull request workflow.
+    It presents all the project information needed to commit a pull request and merge code confidently." [<a
       href="http://github.com/review.ninja/">ReviewNinja official</a>]. The tool was developed before GitHub Pull
     requests existed and provided line-by-line codereviews on top of the platform.</p>
   <h3>CatchyTune</h3>
-  <p>CatchyTune is an online music player where artists can share their music and their fans listen to it. The project
-    was created as part of a Software Engineering course at <a
-      href="https://www.karlsruhe.dhbw.de/startseite.html">Duale Hochschule Karlsruhe</a>. As it provided streaming of
-    music and upload functionality, I am not hosting it anymore, for legal reasons. Also this was my first and only RoR
-    project - the speed of initial development and prototyping was a blast, and is certainly the reason for the project
-    being well-graded. Thanks <a href="https://dhh.dk/">David</a>!</p>
+  <p>
+    A fun student project I did part of my studies at <a href="https://www.karlsruhe.dhbw.de/startseite.html">Duale Hochschule Karlsruhe</a>. It's an online music player with upload and search functionality writte in ruby on rails.
   <h3>XP days 2017</h3>
   <p>I went to the <a href="http://www.xpdays.de/2017/">XP days 2017</a> in Stuttgart. The content reached from
     practical teamwork by building a event hall with LEGO to<a
@@ -100,8 +108,9 @@
       href="http://www.xpdays.de/2017/sessions/132-agile-im-konzern-entwicklung-als-entwickler-anstossen.html"> how to
       push change as a developer in large organizations</a>.</p>
   <h3>Object Calisthenics Validator</h3>
-  <p><a href="http://www.xpteam.com/">Jeff Bay's</a> "Object Calisthencs" are a short coding challenge described in <a
-      href="https://pragprog.com/book/twa/thoughtworks-anthology">The ThoughtWorks Anthology</a>. I have created an
+  <p>
+    <a href="http://www.xpteam.com/">Jeff Bay's</a> "Object Calisthencs" are a short coding challenge described in <a
+      href="https://pragprog.com/book/twa/thoughtworks-anthology">The ThoughtWorks Anthology</a>. I created an
     Eclipse plugin to validate if code created during the training, satisfies the rules. The tool adds hints and
     warnings to the respective code line. As part of a <a
       href="https://github.com/fabianschwarzfritz/Object-Calisthenics-Analyzer-Documentation/blob/master/documents/report/_endversion/ValidatingTheObjectCalisthenics.pdf">student
@@ -109,7 +118,10 @@
 
   <h2>Good articles and podcasts:</h2>
   <ul>
+    <li><a href="https://staffeng.com/book">Will Larson - Staff Engineer: Leadershop beyond the management track</a></li>
+    <li><a href="https://pragprog.com/titles/rails6/agile-web-development-with-rails-6/">Sam Ruby and David Bryant Copeland - Agile Web Development with Rails 6</a></li>
     <li><a href="https://martinfowler.com/books/refactoring.html">Martin Fowler - Refactoring, Improving the Design of Existing Code</a></li>
+    <li><a href="https://www.npr.org/series/490248027/how-i-built-this">NPR Guy Raz - How I built this (all podcasts)</a>
     <li><a href="https://landing.google.com/sre/sre-book/chapters/monitoring-distributed-systems/">Google - monitoring distributed systems</a></li>
     <li><a href="https://samharris.org/podcasts/224-key-trumps-appeal/">Sam Harris - 224 The key to Trumps appeal</a>
     </li>
@@ -118,31 +130,28 @@
   </ul>
   </div>
   <h2>Personal</h2>
-  <p>I am an avid diver in my freetime. Re-learned proper diving only after diving with <a
-      href="https://www.gue.com">Global Underwater Explorers</a>, the diving association that formed out of the
-    activities <a href="https://facebook.com/woodvillekarstplainproject/">Woodville Karst Plain Project</a>. They needed
-    skilled and capable support diver for their projects and formed a diving association to train divers. Today, the
-    standardized approach is what GUE is famous for and results in the best dive training one can find.</p>
-  <p>While I am not yet diving in nasty cold cave, I do some activities in our local lake. We have established a <a
-      href="https://www.projectbaselinerheinauersee.de">Project Baseline</a> at our local lake and monitor underwater
-    changes regurly. Hopefully this will allow us to draw conclusions in a few years from now about how climate change
-    affects out local waters. Ah, and if you whant to go diving in the Rhein-Neckar-Area, just contact me on facebook, I
-    am always up to diving with new people.</p>
-  <p>As part of the project, we have also created a video how to <a
-      href="https://www.youtube.com/watch?v=kA68XNoVAec">measure visibility</a> at the underwater station. There you can
-    see me in action.</p>
-
+  <p>
+   I love scuba diving in my freetime. Re-learned proper diving only after diving with <a href="https://www.gue.com">Global Underwater Explorers</a>.
+   You find me scuba diving or scootering around in the local lakes.
+   I do some activities in our local lake.
+   We have created <a href="https://www.projectbaselinerheinauersee.de">Project Baseline</a> and monitor underwater changes regurly.
+   Hopefully this will allow us to draw conclusions in a few years from now about how climate change affects out local waters.
+   We try to <a href="https://www.youtube.com/watch?v=kA68XNoVAec">measure visibility</a> at the underwater station regularly.
+  </p>
   <h2>Links</h2>
-  This small webspace is not the only place in the internet where I am. You can find me on other platforms as well:
+  You can find me on other places as well:
   <ul>
     <li><a href="https://github.com/fabianschwarzfritz/">Github</a></li>
     <li><a href="https://www.linkedin.com/in/fabianschwarzfritz/">LinkedIn</a></li>
     <li><a href="https://facebook.com/fabian.schwarzfritz/">Facebook</a></li>
     <li><a href="https://www.projectbaselinerheinauersee.de/">Project Baseline</a></li>
   </ul>
+
+  <!--
   <h2>The end</h2>
   <p>Feel free to share an clone :). And please <a href="https://github.com/fabianschwarzfritz/fabianschwarzfritz.github.io/issues">tell me</a>
       if you find a bug in this webspace! Fabian.</p>
+  -->
 </body>
 
 </html>
