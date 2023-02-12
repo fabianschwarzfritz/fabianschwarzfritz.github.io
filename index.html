@@ -9,67 +9,183 @@
 
 <body>
   <style>
-    body {
-      /*background-color: #f7f7f7; */
-      background-color: #202124;
-      /*color: #484848;*/
-      color: #bdc1c6;
-      font-family: Helvetica;
-      margin: 60px auto;
-      width: 780px;
-      font-size: 18px;
-      line-height: 26px
-    }
 
-    .avatar {
-      border-radius: 100px;
-      object-fit: cover;
-      object-position: 80% 0;
-      width: 100px;
-      height: 100px;
-      float: left;
-      margin-right: 15px;
-    }
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
-    h2 {
-      margin-top: 50px;
-    }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-    img {
-      width: 100px;
-    }
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 
-    a {
-      color: #8ab4f8;
-    }
+body {
+  margin: 0;
+  padding: 0;
 
+  font-family: "Helvetica Neue";
+}
 
-    @media screen and (max-width:770px) {
-      body {
-        margin: 5px auto;
-        float: none;
-        width: 90%;
-      }
+nav {
+  font-size: 1.9em;
+  font-weight: 700;
 
-      h1,
-      h2 {
-        line-height: 40px;
-      }
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* TODO why does position: fixed move the content to the left? */
+  background-color: white;
+  margin-top: 0;
+  padding: 10px 0 10px 0;
+
+  animation: fadeIn 1s;
+  box-shadow: 0 15px 15px -15px #efefef;
+}
+
+nav:hover {
+  box-shadow: 0 25px 25px -25px #ddd;
+  transition: 0.5s;
+}
+
+nav div a {
+  color: black;
+  margin: 0 10px 0px 10px;
+  text-decoration-color: #001FE8;
+}
+
+nav div a:hover {
+  color: #02E6FF;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+img {
+  max-height: 200px;
+  height: 70%;
+  width: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+
+  animation: slideIn 0.5s, fadeIn 1s;
+}
+
+main * {
+  max-width: 600px;
+}
+
+main h1 {
+  font-size: 9em;
+  font-weight: 100;
+}
+
+main a {
+  color: #001FE8;
+  transition: 0.2s;
+}
+
+main a:hover {
+  color: #02E6FF;
+  text-decoration: none;
+}
+
   </style>
 
-  <h1>Fabian Schwarz-Fritz</h1>
+  <nav>
+    <div>
+      <a href="">Home</a>
+      <a href="https://github.com">Github</a>
+      <a href="http://www.shopify.com">Shopify</a>
+      <a href="https://www.projectbaselinerheinauersee.de/">ProjectBaseline</a>
+      <a href="http://www.economic-stories.com">Ilona</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Hey &#128075;</h1>
+
+    <p>
+      I'm a software engineer with over 10 years experience developing infrastructure services and application.
+      This website is currently under construction &#128679;
+    </p>
+    <h2>Books & Blogs & Podcasts</h2>
+    <ul>
+      <li><a href="https://staffeng.com/book">Will Larson - Staff Engineer: Leadershop beyond the management track</a></li>
+      <li><a href="https://pragprog.com/titles/rails6/agile-web-development-with-rails-6/">Sam Ruby and David Bryant Copeland - Agile Web Development with Rails 6</a></li>
+      <li><a href="https://martinfowler.com/books/refactoring.html">Martin Fowler - Refactoring, Improving the Design of Existing Code</a></li>
+      <li><a href="https://www.npr.org/series/490248027/how-i-built-this">NPR Guy Raz - How I built this (all podcasts)</a>
+      <li><a href="https://landing.google.com/sre/sre-book/chapters/monitoring-distributed-systems/">Google - monitoring distributed systems</a></li>
+      <li><a href="https://samharris.org/podcasts/224-key-trumps-appeal/">Sam Harris - 224 The key to Trumps appeal</a>
+      </li>
+      <li><a href="https://samharris.org/podcasts/221-success-failure-common-good/">Sam Harris - 221 Success, Failure, &
+          the common good</a></li>
+    </ul>
+    </div>
+    <h2>Personal</h2>
+    <p>
+     I love scuba diving in my freetime. Re-learned proper diving only after diving with <a href="https://www.gue.com">Global Underwater Explorers</a>.
+     You find me scuba diving or scootering around in the local lakes.
+    </p>
+    <p>
+     We have created <a href="https://www.projectbaselinerheinauersee.de">Project Baseline</a> and monitor underwater changes regurly.
+     Hopefully this will allow us to draw conclusions in a few years from now about how climate change affects out local waters.
+     We try to <a href="https://www.youtube.com/watch?v=kA68XNoVAec">measure visibility</a> at the underwater station regularly.
+    </p>
+    <h2>Links</h2>
+    You can find me on other places as well:
+    <ul>
+      <li><a href="https://github.com/fabianschwarzfritz/">Github</a></li>
+      <li><a href="https://www.linkedin.com/in/fabianschwarzfritz/">LinkedIn</a></li>
+      <li><a href="https://facebook.com/fabian.schwarzfritz/">Facebook</a></li>
+      <li><a href="https://www.projectbaselinerheinauersee.de/">Project Baseline</a></li>
+    </ul>
+    These are more places in the web I like:
+    <ul>
+      <li><a href="https://coding-pandas.com">Coding Pandas</a></li>
+      <li><a href="https://economic-stories.com">Ilona Tsanko</a></li>
+      <li><a href="https://www.christophhaefner.de">Christoph Haefner</a></li>
+      <li><a href="https://blasch.business/">Julian Blasch</a></li>
+    </ul>
+
+  </main>
+
+</body>
+
+</html>
+
+<!-- 
+
   <a href="me_backup.jpg">
-    <img src="me_backup.jpg" class="avatar" />
+    <img src="me_backup.jpg" loading="lazy" />
   </a>
-  <p>
-    I'm a software engineer and for over 10 years I have been developing applications, service and platforms.
-  </p>
-  <p>
-    My main interests are in distributed systems and backend development. And vim.
-    Once in a while I write some lines for mobile as well.
-  </p>
+
   <h2>Projects at Work</h2>
+
   <h3>Data Warehouse Cloud</h3>
   <p>
     <a href="https://www.sap.com/germany/products/data-warehouse-cloud.html">SAP Data Warehouse Cloud</a> is a
@@ -116,42 +232,12 @@
       href="https://github.com/fabianschwarzfritz/Object-Calisthenics-Analyzer-Documentation/blob/master/documents/report/_endversion/ValidatingTheObjectCalisthenics.pdf">student
       research paper</a> I have furthermore analyzed how such a validation for each rule could be implemented.</p>
 
-  <h2>Good articles and podcasts:</h2>
-  <ul>
-    <li><a href="https://staffeng.com/book">Will Larson - Staff Engineer: Leadershop beyond the management track</a></li>
-    <li><a href="https://pragprog.com/titles/rails6/agile-web-development-with-rails-6/">Sam Ruby and David Bryant Copeland - Agile Web Development with Rails 6</a></li>
-    <li><a href="https://martinfowler.com/books/refactoring.html">Martin Fowler - Refactoring, Improving the Design of Existing Code</a></li>
-    <li><a href="https://www.npr.org/series/490248027/how-i-built-this">NPR Guy Raz - How I built this (all podcasts)</a>
-    <li><a href="https://landing.google.com/sre/sre-book/chapters/monitoring-distributed-systems/">Google - monitoring distributed systems</a></li>
-    <li><a href="https://samharris.org/podcasts/224-key-trumps-appeal/">Sam Harris - 224 The key to Trumps appeal</a>
-    </li>
-    <li><a href="https://samharris.org/podcasts/221-success-failure-common-good/">Sam Harris - 221 Success, Failure, &
-        the common good</a></li>
-  </ul>
-  </div>
-  <h2>Personal</h2>
-  <p>
-   I love scuba diving in my freetime. Re-learned proper diving only after diving with <a href="https://www.gue.com">Global Underwater Explorers</a>.
-   You find me scuba diving or scootering around in the local lakes.
-   I do some activities in our local lake.
-   We have created <a href="https://www.projectbaselinerheinauersee.de">Project Baseline</a> and monitor underwater changes regurly.
-   Hopefully this will allow us to draw conclusions in a few years from now about how climate change affects out local waters.
-   We try to <a href="https://www.youtube.com/watch?v=kA68XNoVAec">measure visibility</a> at the underwater station regularly.
-  </p>
-  <h2>Links</h2>
-  You can find me on other places as well:
-  <ul>
-    <li><a href="https://github.com/fabianschwarzfritz/">Github</a></li>
-    <li><a href="https://www.linkedin.com/in/fabianschwarzfritz/">LinkedIn</a></li>
-    <li><a href="https://facebook.com/fabian.schwarzfritz/">Facebook</a></li>
-    <li><a href="https://www.projectbaselinerheinauersee.de/">Project Baseline</a></li>
-  </ul>
 
-  <!--
-  <h2>The end</h2>
-  <p>Feel free to share an clone :). And please <a href="https://github.com/fabianschwarzfritz/fabianschwarzfritz.github.io/issues">tell me</a>
-      if you find a bug in this webspace! Fabian.</p>
-  -->
-</body>
 
-</html>
+-->
+
+<!--
+<h2>The end</h2>
+<p>Feel free to share an clone :). And please <a href="https://github.com/fabianschwarzfritz/fabianschwarzfritz.github.io/issues">tell me</a>
+    if you find a bug in this webspace! Fabian.</p>
+-->
