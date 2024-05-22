@@ -1,28 +1,10 @@
 
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateY(-20px);
-  }
-  to {
-    transform: translateY(0);
   }
 }
 
@@ -73,7 +55,7 @@ main {
   padding-left: 30px;
   padding-right: 30px;
 
-  animation: slideIn 0.5s, fadeIn 1s;
+  animation: fadeIn 0.5s;
 
   font-size: 16px;
   line-height: 1.35;
