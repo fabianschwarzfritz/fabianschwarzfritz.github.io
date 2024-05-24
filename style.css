@@ -16,34 +16,25 @@ body {
 }
 
 nav {
-  font-size: 1.9em;
-  font-weight: 700;
+  position: fixed;
+  font-size: 1.0em;
+  font-weight: 500;
 
   display: flex;
+  flex-direction: column; 
 
-  background-color: white;
-  margin-top: 0;
-  padding: 10px 0 10px 0;
-
-  animation: fadeIn 1s;
-  box-shadow: 0 15px 15px -15px #efefef;
+  margin-top: 10%;
 }
 
-nav:hover {
-  box-shadow: 0 25px 25px -25px #ddd;
-  transition: 0.5s;
-}
-
-nav div a {
-  color: black;
-  margin: 0 10px 0px 10px;
-  text-decoration-color: #001FE8;
-}
-
-nav div a:hover {
-  color: #02E6FF;
-  transition: 0.2s;
+nav a {
+  color: #797979;
+  margin: 10px 20px;
   text-decoration: none;
+}
+
+nav a:hover {
+  color: #001FE8;
+  transition: 0.2s;
 }
 
 main {
@@ -51,8 +42,7 @@ main {
   flex-direction: column;
   justify-content: center;
 
-  margin-top: 30px;
-  padding-left: 30px;
+  padding-left: 230px;
   padding-right: 30px;
 
   animation: fadeIn 0.5s;
@@ -66,16 +56,28 @@ main * {
 }
 
 main h1 {
-  /*font-size: 26px;
-  font-weight: 120;*/
+  font-size: 3em;
 }
 
 main a {
   color: #001FE8;
   transition: 0.2s;
+  text-decoration: none;
+}
+main a:hover {
+  filter: brightness(50%);
+  text-decoration: underline;
 }
 
-main a:hover {
-  color: #02E6FF;
-  text-decoration: none;
+main.index a {
+  color: #05cde3;
+}
+main.projects a {
+  color: #9102ff;
+}
+main.resources a {
+  color: #f04247;
+}
+main.cv a {
+  color: #1fbd64;
 }
