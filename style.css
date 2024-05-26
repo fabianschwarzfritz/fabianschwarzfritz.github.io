@@ -33,8 +33,9 @@ nav a {
 }
 
 nav a:hover {
-  color: #001FE8;
+  color: #000000;
   transition: 0.2s;
+  text-decoration: underline;
 }
 
 main {
@@ -42,7 +43,7 @@ main {
   flex-direction: column;
   justify-content: center;
 
-  padding-left: 200px;
+  margin-left: 200px;
   padding-right: 30px;
   max-width: 800px;
 
@@ -75,12 +76,36 @@ main a:hover {
 main.index a {
   color: #05cde3;
 }
-main.projects a {
+main.index {
+  border-top: 20px solid #05cde3;
+}
+main.runflow a {
+  color: rgb(89, 161, 255);
+}
+main.runflow {
+  border-top: 20px solid rgb(89, 161, 255);
+}
+main.pandaspairs a {
   color: #9102ff;
+}
+main.pandaspairs {
+  border-top: 20px solid #9102ff;
+}
+main.logomitki a {
+  color: #ffcc00;
+}
+main.logomitki {
+  border-top: 20px solid #ffcc00;
 }
 main.resources a {
   color: #f04247;
 }
+main.resources {
+  border-top: 20px solid #f04247;
+}
 main.cv a {
   color: #1fbd64;
+}
+main.cv{
+  border-top: 20px solid #1fbd64;
 }
