@@ -23,7 +23,7 @@ nav {
   display: flex;
   flex-direction: column; 
 
-  margin-top: 10%;
+  margin-top: 100px;
 }
 
 nav a {
@@ -42,8 +42,9 @@ main {
   flex-direction: column;
   justify-content: center;
 
-  padding-left: 230px;
+  padding-left: 200px;
   padding-right: 30px;
+  max-width: 800px;
 
   animation: fadeIn 0.5s;
 
@@ -56,7 +57,9 @@ main * {
 }
 
 main h1 {
-  font-size: 3em;
+  font-size: 5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 main a {
