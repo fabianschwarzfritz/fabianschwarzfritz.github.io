@@ -74,10 +74,10 @@ main a:hover {
 }
 
 main.index a {
-  color: #05cde3;
+  color: #762E14;
 }
 main.index {
-  border-top: 20px solid #05cde3;
+  border-top: 20px solid #762E14;
 }
 main.runflow a {
   color: rgb(89, 161, 255);
@@ -86,26 +86,32 @@ main.runflow {
   border-top: 20px solid rgb(89, 161, 255);
 }
 main.pandaspairs a {
-  color: #9102ff;
+  color: #AEEBD5;
 }
 main.pandaspairs {
-  border-top: 20px solid #9102ff;
+  border-top: 20px solid #AEEBD5;
+}
+main.tauchenrheinneckar a {
+  color: #FFE3BF;
+}
+main.tauchenrheinneckar {
+  border-top: 20px solid #FFE3BF;
 }
 main.logomitki a {
-  color: #ffcc00;
+  color: #C2C2C2;
 }
 main.logomitki {
-  border-top: 20px solid #ffcc00;
+  border-top: 20px solid #C2C2C2;
 }
 main.resources a {
-  color: #f04247;
+  color: #222121;
 }
 main.resources {
-  border-top: 20px solid #f04247;
+  border-top: 20px solid #222121;
 }
 main.cv a {
-  color: #1fbd64;
+  color: #95D5D0;
 }
-main.cv{
-  border-top: 20px solid #1fbd64;
-}
+main.cv {
+  border-top: 20px solid #95D5D0;
+main.
